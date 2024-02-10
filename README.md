@@ -37,6 +37,13 @@ pnpm run dev
 
 Este comando iniciará el servidor Node.js en modo de desarrollo. Ahora puedes probar el front-end de la aplicación.
 
+## Configuaracion de las variables de entrono
+En la raiz del proyecto crear un archivo `.env` y dentro de archivo crear la varaible de entorno de **PORT** Y **DATABASE_URL** puede copiar lo siguiente:
+```bash
+PORT=3500
+DATABASE_URL="mysql://root:root@localhost:3306/todos_db?connection_limit=5"
+# DOMAIN=
+```
 ## Configuración del ORM Prisma
 Este proyecto utiliza Prisma como ORM para interactuar con la base de datos MySQL. Después de haber levantado la base de datos y asegurarte de que está en funcionamiento, sigue los siguientes pasos para configurar Prisma:
 1. Ejecuta el siguientes comandos para aplicar las migraciones y actualizar la estructura de la base de datos:
