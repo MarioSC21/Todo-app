@@ -14,6 +14,15 @@ Este proyecto utiliza Docker para gestionar la base de datos MySQL. Asegúrate d
 
 2. Una vez que el contenedor de la base de datos esté en funcionamiento, asegúrate de que estás ubicado en la raíz del proyecto y sigue los pasos siguientes.
 
+## Configuración del ORM Prisma
+Este proyecto utiliza Prisma como ORM para interactuar con la base de datos MySQL. Después de haber levantado la base de datos y asegurarte de que está en funcionamiento, sigue los siguientes pasos para configurar Prisma:
+1. Ejecuta el siguientes comandos para aplicar las migraciones y actualizar la estructura de la base de datos:
+
+   ```bash
+   npx prisma migrate dev
+   npx prisma generate
+   ```
+
 ## Configuración del servidor Node.js
 
 Asegúrate de tener `typescript`, `ts-node`, `nodemon` y `pnpm` instalados de forma global. Puedes instalarlos ejecutando los siguientes comandos:
