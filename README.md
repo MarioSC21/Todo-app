@@ -37,7 +37,7 @@ pnpm run dev
 
 Este comando iniciará el servidor Node.js en modo de desarrollo. Ahora puedes probar el front-end de la aplicación.
 
-## Configuaracion de las variables de entrono
+## Configuaracion de las variables de entorno
 En la raiz del proyecto crear un archivo `.env` y dentro de archivo crear la varaible de entorno de **PORT** Y **DATABASE_URL** puede copiar lo siguiente:
 ```bash
 PORT=3500
